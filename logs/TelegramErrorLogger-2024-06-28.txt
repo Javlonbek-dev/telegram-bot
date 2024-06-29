@@ -1,0 +1,175 @@
+============[Date]============
+[ 2024-06-28 17:32:29  UTC ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: field "keyboard" must be an Array of Arrays
+=========[Sent Data]==========
+[ref]
+ref.update_id= 145407259
+ref.message.message_id= 293
+ref.message.from.id= 1435346034
+ref.message.from.is_bot= false
+ref.message.from.first_name= Javlon
+ref.message.from.username= MUATT2021
+ref.message.from.language_code= en
+ref.message.chat.id= 1435346034
+ref.message.chat.first_name= Javlon
+ref.message.chat.username= MUATT2021
+ref.message.chat.type= private
+ref.message.date= 1719595949
+ref.message.text= 1kg - 50 000 so'm
+
+
+[ref]
+ref.reply_markup= {"keyboard":[{"text":"Raqam jo'natish","request_contact":true,"request_location":false}],"one_time_keyboard":true,"resize_keyboard":true,"selective":true}
+ref.text= Hajm tanlandi. Endi telefon raqamizngizni yuborishiingzi kerak
+
+
+============[Trace]===========
+#0 /storage/ssd5/319/22372319/public_html/Telegram.php(1862): TelegramErrorLogger::log()
+#1 /storage/ssd5/319/22372319/public_html/Telegram.php(124): Telegram->sendAPIRequest()
+#2 /storage/ssd5/319/22372319/public_html/Telegram.php(182): Telegram->endpoint()
+#3 /storage/ssd5/319/22372319/public_html/binchibot.php(33): Telegram->sendMessage()
+#4 {main}
+
+============[Date]============
+[ 2024-06-28 17:32:34  UTC ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: field "keyboard" must be an Array of Arrays
+=========[Sent Data]==========
+[ref]
+ref.update_id= 145407260
+ref.message.message_id= 294
+ref.message.from.id= 1435346034
+ref.message.from.is_bot= false
+ref.message.from.first_name= Javlon
+ref.message.from.username= MUATT2021
+ref.message.from.language_code= en
+ref.message.chat.id= 1435346034
+ref.message.chat.first_name= Javlon
+ref.message.chat.username= MUATT2021
+ref.message.chat.type= private
+ref.message.date= 1719595953
+ref.message.text= 1kg - 50 000 so'm
+
+
+[ref]
+ref.reply_markup= {"keyboard":[{"text":"Raqam jo'natish","request_contact":true,"request_location":false}],"one_time_keyboard":true,"resize_keyboard":true,"selective":true}
+ref.text= Hajm tanlandi. Endi telefon raqamizngizni yuborishiingzi kerak
+
+
+============[Trace]===========
+#0 /storage/ssd5/319/22372319/public_html/Telegram.php(1862): TelegramErrorLogger::log()
+#1 /storage/ssd5/319/22372319/public_html/Telegram.php(124): Telegram->sendAPIRequest()
+#2 /storage/ssd5/319/22372319/public_html/Telegram.php(182): Telegram->endpoint()
+#3 /storage/ssd5/319/22372319/public_html/binchibot.php(33): Telegram->sendMessage()
+#4 {main}
+
+============[Date]============
+[ 2024-06-28 17:32:34  UTC ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: field "keyboard" must be an Array of Arrays
+=========[Sent Data]==========
+[ref]
+ref.update_id= 145407261
+ref.message.message_id= 295
+ref.message.from.id= 1435346034
+ref.message.from.is_bot= false
+ref.message.from.first_name= Javlon
+ref.message.from.username= MUATT2021
+ref.message.from.language_code= en
+ref.message.chat.id= 1435346034
+ref.message.chat.first_name= Javlon
+ref.message.chat.username= MUATT2021
+ref.message.chat.type= private
+ref.message.date= 1719595954
+ref.message.text= 1kg - 50 000 so'm
+
+
+[ref]
+ref.reply_markup= {"keyboard":[{"text":"Raqam jo'natish","request_contact":true,"request_location":false}],"one_time_keyboard":true,"resize_keyboard":true,"selective":true}
+ref.text= Hajm tanlandi. Endi telefon raqamizngizni yuborishiingzi kerak
+
+
+============[Trace]===========
+#0 /storage/ssd5/319/22372319/public_html/Telegram.php(1862): TelegramErrorLogger::log()
+#1 /storage/ssd5/319/22372319/public_html/Telegram.php(124): Telegram->sendAPIRequest()
+#2 /storage/ssd5/319/22372319/public_html/Telegram.php(182): Telegram->endpoint()
+#3 /storage/ssd5/319/22372319/public_html/binchibot.php(33): Telegram->sendMessage()
+#4 {main}
+
+============[Date]============
+[ 2024-06-28 17:34:21  UTC ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: field "keyboard" must be an Array of Arrays
+=========[Sent Data]==========
+[ref]
+ref.update_id= 145407262
+ref.message.message_id= 296
+ref.message.from.id= 1435346034
+ref.message.from.is_bot= false
+ref.message.from.first_name= Javlon
+ref.message.from.username= MUATT2021
+ref.message.from.language_code= en
+ref.message.chat.id= 1435346034
+ref.message.chat.first_name= Javlon
+ref.message.chat.username= MUATT2021
+ref.message.chat.type= private
+ref.message.date= 1719596060
+ref.message.text= 1kg - 50 000 so'm
+
+
+[ref]
+ref.reply_markup= {"keyboard":[{"text":"Raqam jo'natish","request_contact":true,"request_location":false}],"one_time_keyboard":false,"resize_keyboard":true,"selective":true}
+ref.text= Hajm tanlandi. Endi telefon raqamizngizni yuborishiingzi kerak
+
+
+============[Trace]===========
+#0 /storage/ssd5/319/22372319/public_html/Telegram.php(1862): TelegramErrorLogger::log()
+#1 /storage/ssd5/319/22372319/public_html/Telegram.php(124): Telegram->sendAPIRequest()
+#2 /storage/ssd5/319/22372319/public_html/Telegram.php(182): Telegram->endpoint()
+#3 /storage/ssd5/319/22372319/public_html/binchibot.php(33): Telegram->sendMessage()
+#4 {main}
+
+============[Date]============
+[ 2024-06-28 17:36:11  UTC ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: field "keyboard" must be an Array of Arrays
+=========[Sent Data]==========
+[ref]
+ref.update_id= 145407265
+ref.message.message_id= 301
+ref.message.from.id= 1435346034
+ref.message.from.is_bot= false
+ref.message.from.first_name= Javlon
+ref.message.from.username= MUATT2021
+ref.message.from.language_code= en
+ref.message.chat.id= 1435346034
+ref.message.chat.first_name= Javlon
+ref.message.chat.username= MUATT2021
+ref.message.chat.type= private
+ref.message.date= 1719596171
+ref.message.text= 1kg
+
+
+[ref]
+ref.reply_markup= {"keyboard":[{"text":"Raqam jo'natish","request_contact":true,"request_location":false}],"one_time_keyboard":false,"resize_keyboard":true,"selective":true}
+ref.text= Hajm tanlandi. Endi telefon raqamizngizni yuborishiingzi kerak
+
+
+============[Trace]===========
+#0 /storage/ssd5/319/22372319/public_html/Telegram.php(1862): TelegramErrorLogger::log()
+#1 /storage/ssd5/319/22372319/public_html/Telegram.php(124): Telegram->sendAPIRequest()
+#2 /storage/ssd5/319/22372319/public_html/Telegram.php(182): Telegram->endpoint()
+#3 /storage/ssd5/319/22372319/public_html/binchibot.php(33): Telegram->sendMessage()
+#4 {main}
+

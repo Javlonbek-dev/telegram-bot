@@ -2,10 +2,20 @@
 include 'Telegram.php';
 
 $telegram = new Telegram("6395779599:AAFd9anUak6ZoY50vEwIeUwd-Wik7i3dYpQ");
-$chat_id = $telegram->ChatID();
 $user_name = $telegram->FirstName();
-$text = $telegram->Text();
+
+$data = $telegram->getData();
+$telegram->sendMessage([
+    'chat_id' => $telegram->ChatID(),
+    'text' => json_encode($data, JSON_PRETTY_PRINT),
+]);
+
+$chat_id = $data['message']['chat']['id'];
+$text = $data['message']['text'];
+$message = $data['message'];
+
 $orderTypes = ["1kg - 50 000 so'm", "1.5kg(1 litr)  - 75 000 so'm", "4,5 kg (3 litr) - 220 000", "7.5kg(5litr) - 370 000"];
+
 switch ($text) {
     case '/start':
         getStart();
@@ -18,7 +28,21 @@ switch ($text) {
         break;
     default:
         if (in_array($text, $orderTypes)) {
+            file_put_contents('users/massa.txt', $text);
             getOrder();
+        } else {
+            switch (file_get_contents('users/step.txt')) {
+                case 'phone':
+                    if ($message['contact']['phone_number'] != "")
+                    {
+                        file_put_contents('users/phone.txt', $message['contact']['phone_number']);
+                    }
+                    else{
+                        file_put_contents('users/phone.txt',$text);
+                    }
+                    showDeleveryType();
+                    break;
+            }
         }
         break;
 }
@@ -26,6 +50,7 @@ switch ($text) {
 function getOrder()
 {
     global $telegram, $chat_id;
+    file_put_contents('users/step.txt', 'phone');
     $option = array(
         array($telegram->buildKeyboardButton("Raqam jo'natish", true)));
     $keyb = $telegram->buildKeyBoard($option, $onetime = false, $resize_keyboard = true);
@@ -65,3 +90,7 @@ function getStart()
     $telegram->sendMessage($content);
 }
 
+function showDeleveryType()
+{
+
+}
