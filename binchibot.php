@@ -1,6 +1,6 @@
 <?php
 include 'Telegram.php';
-
+require_once 'db_connect.php';
 $telegram = new Telegram("6395779599:AAFd9anUak6ZoY50vEwIeUwd-Wik7i3dYpQ");
 $user_name = $telegram->FirstName();
 
@@ -165,4 +165,18 @@ function showDeleveryType()
     $keyb = $telegram->buildKeyBoard($option, $onetime = true, $resize_keyboard = true);
     $content = array('chat_id' => $chat_id, 'reply_markup' => $keyb, 'text' => "Mahsulotni yetkazish berish ximatidan foydalanasizmi yoki olib ketasizmi!");
     $telegram->sendMessage($content);
+}
+
+testDB();
+function testDB()
+{
+    global $db;
+   $result = $db->query("select * from `users`");
+   $arr = $result->fetch_assoc();
+    while ($row = $result->fetch_assoc()) {
+        if (isset($arr['phone'])){
+        print ($arr['phone']);
+        print "<br/>";
+        }
+    }
 }
