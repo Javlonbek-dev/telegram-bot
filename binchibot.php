@@ -5,11 +5,6 @@ $telegram = new Telegram("6395779599:AAFd9anUak6ZoY50vEwIeUwd-Wik7i3dYpQ");
 $user_name = $telegram->FirstName();
 
 $data = $telegram->getData();
-//$telegram->sendMessage([
-//    'chat_id' => $telegram->ChatID(),
-//    'text' => json_encode($data, JSON_PRETTY_PRINT),
-//]);
-
 $chat_id = $data['message']['chat']['id'];
 $text = $data['message']['text'];
 $message = $data['message'];
@@ -57,10 +52,10 @@ switch ($text) {
             file_put_contents('users/massa.txt', $text);
             getOrder();
         } else {
-            switch (file_get_contents('users/step.txt')) {
+            switch (getPhone($chat_id)) {
                 case 'phone':
                     if ($message['contact']['phone_number'] != "") {
-                        file_put_contents('users/phone.txt', $message['contact']['phone_number']);
+                        setPhone($chat_id, $message['contact']['phone_number']);
                     } else {
                         file_put_contents('users/phone.txt', $text);
                     }
